@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>223138937954-g672jq4ibmit2ps7nd9mpoiliho883iu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.223138937954-g672jq4ibmit2ps7nd9mpoiliho883iu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB81aDee-kz3XI9HhpsIUDheYOx-Y8sJK8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>223138937954</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>devItalo.SmartMoney</string>
+	<key>PROJECT_ID</key>
+	<string>smartmoney-a8537</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smartmoney-a8537.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:223138937954:ios:56bd15e6d9b219dba8e53b</string>
+</dict>
+</plist>
