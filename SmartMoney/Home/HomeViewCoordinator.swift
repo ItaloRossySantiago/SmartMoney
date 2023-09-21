@@ -18,6 +18,11 @@ class HomeCoordinator: Coordinator {
         viewController.onLogoffTappedClouser = {
             self.navigationController.popViewController(animated: true)
         }
+        
+        viewController.onInsertExpenseTappedClouser = {
+            let insertVc = InsertExpenseViewController()
+            self.navigationController.present(insertVc, animated: true)
+        }
    }
 
     required init(navigationController: UINavigationController) {

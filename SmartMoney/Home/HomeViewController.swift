@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
     // CLOUSURES
     // var ontappedSelectImage:(() -> Void)?
     var onLogoffTappedClouser:(() -> Void)?
+    var onInsertExpenseTappedClouser:(() ->Void)?
     private func setupView() {
         view.backgroundColor = UIColor(hexString: "#dde4e6")
         
@@ -124,6 +125,7 @@ class HomeViewController: UIViewController {
     
     lazy var newGastoImageView:  UIImageView = {
         let image = UIImageView()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(insertExpenseAction))
         image.translatesAutoresizingMaskIntoConstraints = false
         image.layer.cornerRadius = 35
         image.contentMode = .scaleAspectFill
@@ -133,10 +135,15 @@ class HomeViewController: UIViewController {
         image.backgroundColor = .white
         image.layer.borderColor = UIColor.red.cgColor
         image.layer.borderWidth = 8
-        
+        image.isUserInteractionEnabled = true
+        image.addGestureRecognizer(tapGesture)
         return image
     }()
     
+    @objc func insertExpenseAction() {
+        print("tetinha")
+        self.onInsertExpenseTappedClouser?()
+    }
     
     
     lazy var helloLabel: UILabel = {

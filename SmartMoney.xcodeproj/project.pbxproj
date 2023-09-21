@@ -10,6 +10,10 @@
 		0B0C45F99DEF64E2F22156FD /* Pods_SmartMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BED6BA372557F35B6C2A2E /* Pods_SmartMoney.framework */; };
 		0F18C37B2A97E782005B281A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18C37A2A97E782005B281A /* UserViewModel.swift */; };
 		0F18C37D2A97ED3D005B281A /* UITextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18C37C2A97ED3D005B281A /* UITextField + Extension.swift */; };
+		0F3064182AA1368200F05B0B /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F3064172AA1368200F05B0B /* Pacifico.ttf */; };
+		0F30641A2AA13AD200F05B0B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3064192AA13AD200F05B0B /* RegisterView.swift */; };
+		0F30641C2AA13F4B00F05B0B /* RegisterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30641B2AA13F4B00F05B0B /* RegisterViewDelegate.swift */; };
+		0F30641E2AA1492100F05B0B /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30641D2AA1492100F05B0B /* UIView + Extension.swift */; };
 		0F4D16472AA018590050F4F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D16462AA018590050F4F1 /* LoadingView.swift */; };
 		0F4D16492AA018730050F4F1 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D16482AA018730050F4F1 /* LoadingViewController.swift */; };
 		0F4D164E2AA01BFF0050F4F1 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D164D2AA01BFF0050F4F1 /* UIImage + Extension.swift */; };
@@ -23,12 +27,13 @@
 		0F8CD2742A3F803F000B325E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CD2732A3F803F000B325E /* LoginViewController.swift */; };
 		0F8CD2762A3F806E000B325E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CD2752A3F806E000B325E /* LoginViewModel.swift */; };
 		0F8CD2792A3F83E2000B325E /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CD2782A3F83E2000B325E /* UIColor + Extension.swift */; };
-		0F8CD27B2A3F9337000B325E /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8CD27A2A3F9337000B325E /* Pacifico.ttf */; };
 		0F96372E2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F96372D2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf */; };
 		0F9637322A43BB8B009B256A /* OpenSans_Condensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F96372F2A43BB8A009B256A /* OpenSans_Condensed-SemiBold.ttf */; };
 		0F9637332A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F9637302A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf */; };
 		0F9637342A43BB8B009B256A /* OpenSans_Condensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F9637312A43BB8B009B256A /* OpenSans_Condensed-Medium.ttf */; };
 		0F9637362A43BC0F009B256A /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9637352A43BC0F009B256A /* UIFont + Extension.swift */; };
+		0FB755E52ABB50FA00E4DF3E /* InsertExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB755E42ABB50FA00E4DF3E /* InsertExpenseView.swift */; };
+		0FB755E72ABB516700E4DF3E /* InsertExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB755E62ABB516700E4DF3E /* InsertExpenseViewController.swift */; };
 		0FDC92532A40ACAE000A4CF8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC92522A40ACAE000A4CF8 /* UserModel.swift */; };
 		0FDC92572A40B51C000A4CF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC92562A40B51C000A4CF8 /* HomeViewController.swift */; };
 		0FDC92592A40B538000A4CF8 /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC92582A40B538000A4CF8 /* HomeViewCoordinator.swift */; };
@@ -43,6 +48,10 @@
 /* Begin PBXFileReference section */
 		0F18C37A2A97E782005B281A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		0F18C37C2A97ED3D005B281A /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
+		0F3064172AA1368200F05B0B /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		0F3064192AA13AD200F05B0B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterView.swift; path = ../../../RegisterView.swift; sourceTree = "<group>"; };
+		0F30641B2AA13F4B00F05B0B /* RegisterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewDelegate.swift; sourceTree = "<group>"; };
+		0F30641D2AA1492100F05B0B /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView + Extension.swift"; path = "../../../../../Desktop/Projects/SmartMoney/SmartMoney/Extensions/UIView + Extension.swift"; sourceTree = "<group>"; };
 		0F4D16462AA018590050F4F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0F4D16482AA018730050F4F1 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		0F4D164D2AA01BFF0050F4F1 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
@@ -58,12 +67,13 @@
 		0F8CD2732A3F803F000B325E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0F8CD2752A3F806E000B325E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0F8CD2782A3F83E2000B325E /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
-		0F8CD27A2A3F9337000B325E /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pacifico.ttf; path = "../Experience-View/Experience View/Pacifico.ttf"; sourceTree = "<group>"; };
 		0F96372D2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Regular.ttf"; sourceTree = "<group>"; };
 		0F96372F2A43BB8A009B256A /* OpenSans_Condensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-SemiBold.ttf"; sourceTree = "<group>"; };
 		0F9637302A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-Light.ttf"; sourceTree = "<group>"; };
 		0F9637312A43BB8B009B256A /* OpenSans_Condensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Medium.ttf"; sourceTree = "<group>"; };
 		0F9637352A43BC0F009B256A /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		0FB755E42ABB50FA00E4DF3E /* InsertExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertExpenseView.swift; path = ../../../../../InsertExpenseView.swift; sourceTree = "<group>"; };
+		0FB755E62ABB516700E4DF3E /* InsertExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertExpenseViewController.swift; path = ../../../../../InsertExpenseViewController.swift; sourceTree = "<group>"; };
 		0FDC92522A40ACAE000A4CF8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		0FDC92562A40B51C000A4CF8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0FDC92582A40B538000A4CF8 /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
@@ -123,7 +133,7 @@
 				0F96372F2A43BB8A009B256A /* OpenSans_Condensed-SemiBold.ttf */,
 				0F9637302A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf */,
 				0F96372D2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf */,
-				0F8CD27A2A3F9337000B325E /* Pacifico.ttf */,
+				0F3064172AA1368200F05B0B /* Pacifico.ttf */,
 				0F8CD2422A3F7391000B325E /* SmartMoney */,
 				0F8CD2412A3F7391000B325E /* Products */,
 				67CA4ACC9F1EF32BEE87D2E8 /* Pods */,
@@ -142,6 +152,7 @@
 		0F8CD2422A3F7391000B325E /* SmartMoney */ = {
 			isa = PBXGroup;
 			children = (
+				0FB755E32ABB50C100E4DF3E /* InsertExpense */,
 				0F4D16452AA0183E0050F4F1 /* Loading */,
 				0F18C3792A97E765005B281A /* User */,
 				0FDC92602A40B8D0000A4CF8 /* Register */,
@@ -186,8 +197,18 @@
 				0F9637352A43BC0F009B256A /* UIFont + Extension.swift */,
 				0F18C37C2A97ED3D005B281A /* UITextField + Extension.swift */,
 				0F4D164D2AA01BFF0050F4F1 /* UIImage + Extension.swift */,
+				0F30641D2AA1492100F05B0B /* UIView + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0FB755E32ABB50C100E4DF3E /* InsertExpense */ = {
+			isa = PBXGroup;
+			children = (
+				0FB755E42ABB50FA00E4DF3E /* InsertExpenseView.swift */,
+				0FB755E62ABB516700E4DF3E /* InsertExpenseViewController.swift */,
+			);
+			path = InsertExpense;
 			sourceTree = "<group>";
 		};
 		0FDC92552A40B4C4000A4CF8 /* Home */ = {
@@ -206,6 +227,8 @@
 				0FDC92612A40B8E9000A4CF8 /* RegisterCoordinator.swift */,
 				0FDC92632A40B8FC000A4CF8 /* RegisterViewController.swift */,
 				0FDC92652A40B90A000A4CF8 /* RegisterViewModel.swift */,
+				0F3064192AA13AD200F05B0B /* RegisterView.swift */,
+				0F30641B2AA13F4B00F05B0B /* RegisterViewDelegate.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -290,10 +313,10 @@
 				0F9637332A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf in Resources */,
 				0F4D16562AA024DF0050F4F1 /* SmartMoney.gif in Resources */,
 				0F9637342A43BB8B009B256A /* OpenSans_Condensed-Medium.ttf in Resources */,
-				0F8CD27B2A3F9337000B325E /* Pacifico.ttf in Resources */,
 				0F8CD2502A3F7393000B325E /* Assets.xcassets in Resources */,
 				0F9637322A43BB8B009B256A /* OpenSans_Condensed-SemiBold.ttf in Resources */,
 				0F96372E2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf in Resources */,
+				0F3064182AA1368200F05B0B /* Pacifico.ttf in Resources */,
 				0FDC925F2A40B74A000A4CF8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F30641C2AA13F4B00F05B0B /* RegisterViewDelegate.swift in Sources */,
 				0FDC92592A40B538000A4CF8 /* HomeViewCoordinator.swift in Sources */,
 				0F9637362A43BC0F009B256A /* UIFont + Extension.swift in Sources */,
 				0F8CD2792A3F83E2000B325E /* UIColor + Extension.swift in Sources */,
@@ -356,6 +380,7 @@
 				0F8CD2762A3F806E000B325E /* LoginViewModel.swift in Sources */,
 				0F18C37B2A97E782005B281A /* UserViewModel.swift in Sources */,
 				0F8CD26F2A3F7F4F000B325E /* Coordinator.swift in Sources */,
+				0F30641A2AA13AD200F05B0B /* RegisterView.swift in Sources */,
 				0F18C37D2A97ED3D005B281A /* UITextField + Extension.swift in Sources */,
 				0FDC925B2A40B54A000A4CF8 /* HomeViewModel.swift in Sources */,
 				0FDC92662A40B90A000A4CF8 /* RegisterViewModel.swift in Sources */,
@@ -363,12 +388,15 @@
 				0F4D16472AA018590050F4F1 /* LoadingView.swift in Sources */,
 				0F4D16492AA018730050F4F1 /* LoadingViewController.swift in Sources */,
 				0FDC925D2A40B6A8000A4CF8 /* UIViewController + Extension.swift in Sources */,
+				0FB755E52ABB50FA00E4DF3E /* InsertExpenseView.swift in Sources */,
+				0F30641E2AA1492100F05B0B /* UIView + Extension.swift in Sources */,
 				0FDC92642A40B8FC000A4CF8 /* RegisterViewController.swift in Sources */,
 				0F8CD24E2A3F7391000B325E /* SmartMoney.xcdatamodeld in Sources */,
 				0FDC92532A40ACAE000A4CF8 /* UserModel.swift in Sources */,
 				0F4D164E2AA01BFF0050F4F1 /* UIImage + Extension.swift in Sources */,
 				0F8CD2462A3F7391000B325E /* SceneDelegate.swift in Sources */,
 				0FDC92622A40B8E9000A4CF8 /* RegisterCoordinator.swift in Sources */,
+				0FB755E72ABB516700E4DF3E /* InsertExpenseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

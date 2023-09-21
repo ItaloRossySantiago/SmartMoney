@@ -94,7 +94,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField.textColor = .white
         textField.delegate = self
         textField.keyboardType = .default
-        textField.addDoneButtonOnKeyboard()
         textField.autocapitalizationType = .none
         textField.text = "italocurty24@gmail.com"
         textField.resignFirstResponder()
@@ -116,7 +115,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField.delegate = self
         textField.keyboardType = .default
         textField.textColor = .white
-        textField.addDoneButtonOnKeyboard()
         textField.autocapitalizationType = .none
         textField.resignFirstResponder()
         textField.isSecureTextEntry = true
