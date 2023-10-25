@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
         homeViewModel.importUserData  { result in
             self.setupUser(result["nome"] ?? "" , result["url_img"] ?? "")
         }
+        
+        homeViewModel.getSaldo()
     }
     
     // CLOUSURES

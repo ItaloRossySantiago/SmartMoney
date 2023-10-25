@@ -37,6 +37,22 @@ class HomeViewModel {
             completion(resultCompletion)
         }
     }
+    
+    public func getSaldo() {
+        let idUser = firebaseAuth.currentUser?.uid ?? ""
+        let saldoRequest = SaldoRequest(firebaseID: idUser, monthNumber: "10", year: "2023")
+        let endPoint:EndPoint = EndPoint(path: "/getSaldo", method: .post)
+
+        ServiceManager.shared.request(with: endPoint, postFields: saldoRequest, decodeType: SaldoResponse.self) { result in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+             
+        }
+    }
 
     
 }

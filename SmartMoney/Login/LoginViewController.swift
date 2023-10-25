@@ -99,7 +99,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         textField.autocorrectionType = .no
         textField.backgroundColor = .black
-        
+        textField.layer.borderWidth = 1.5
+        textField.layer.borderColor = UIColor.orange.cgColor
         return textField
     }()
     
