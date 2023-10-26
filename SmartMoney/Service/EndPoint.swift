@@ -20,8 +20,3 @@ struct EndPoint {
         self.parameters = parameters
     }
 }
-
-enum Parameters {
-    case dictionary([String:Any])
-    case encodable([Encodable])
-}

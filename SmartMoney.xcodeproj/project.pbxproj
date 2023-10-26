@@ -33,6 +33,9 @@
 		0FACA52C2AE9757600589041 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA52B2AE9757600589041 /* EndPoint.swift */; };
 		0FACA52F2AE97CE900589041 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA52E2AE97CE900589041 /* HomeService.swift */; };
 		0FACA5312AE97F9800589041 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA5302AE97F9800589041 /* RequestBuilder.swift */; };
+		0FAE6EE62AE9C81A0058D7EA /* DefaultRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAE6EE52AE9C81A0058D7EA /* DefaultRequestBuilder.swift */; };
+		0FAE6EE82AE9D9B60058D7EA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAE6EE72AE9D9B60058D7EA /* Parameters.swift */; };
+		0FAE6EEA2AE9FA830058D7EA /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAE6EE92AE9FA830058D7EA /* NetworkLogger.swift */; };
 		0FB755E52ABB50FA00E4DF3E /* InsertExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB755E42ABB50FA00E4DF3E /* InsertExpenseView.swift */; };
 		0FB755E72ABB516700E4DF3E /* InsertExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB755E62ABB516700E4DF3E /* InsertExpenseViewController.swift */; };
 		0FBCEE062AE892CD0045F279 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE052AE892CD0045F279 /* ServiceManager.swift */; };
@@ -80,6 +83,9 @@
 		0FACA52B2AE9757600589041 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		0FACA52E2AE97CE900589041 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		0FACA5302AE97F9800589041 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		0FAE6EE52AE9C81A0058D7EA /* DefaultRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestBuilder.swift; sourceTree = "<group>"; };
+		0FAE6EE72AE9D9B60058D7EA /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		0FAE6EE92AE9FA830058D7EA /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		0FB755E42ABB50FA00E4DF3E /* InsertExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertExpenseView.swift; path = ../../../../../InsertExpenseView.swift; sourceTree = "<group>"; };
 		0FB755E62ABB516700E4DF3E /* InsertExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertExpenseViewController.swift; path = ../../../../../InsertExpenseViewController.swift; sourceTree = "<group>"; };
 		0FBCEE052AE892CD0045F279 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
@@ -234,6 +240,9 @@
 				0FBCEE0B2AE898800045F279 /* NetworkLayer.swift */,
 				0FACA52B2AE9757600589041 /* EndPoint.swift */,
 				0FACA5302AE97F9800589041 /* RequestBuilder.swift */,
+				0FAE6EE52AE9C81A0058D7EA /* DefaultRequestBuilder.swift */,
+				0FAE6EE72AE9D9B60058D7EA /* Parameters.swift */,
+				0FAE6EE92AE9FA830058D7EA /* NetworkLogger.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -433,6 +442,7 @@
 				0F8CD2442A3F7391000B325E /* AppDelegate.swift in Sources */,
 				0F8CD2762A3F806E000B325E /* LoginViewModel.swift in Sources */,
 				0F18C37B2A97E782005B281A /* UserViewModel.swift in Sources */,
+				0FAE6EE62AE9C81A0058D7EA /* DefaultRequestBuilder.swift in Sources */,
 				0FACA52C2AE9757600589041 /* EndPoint.swift in Sources */,
 				0FBCEE0A2AE895120045F279 /* NetworkError.swift in Sources */,
 				0FBCEE0F2AE8A7400045F279 /* SaldoResponse.swift in Sources */,
@@ -455,8 +465,10 @@
 				0F8CD2462A3F7391000B325E /* SceneDelegate.swift in Sources */,
 				0FACA52F2AE97CE900589041 /* HomeService.swift in Sources */,
 				0FDC92622A40B8E9000A4CF8 /* RegisterCoordinator.swift in Sources */,
+				0FAE6EEA2AE9FA830058D7EA /* NetworkLogger.swift in Sources */,
 				0FB755E72ABB516700E4DF3E /* InsertExpenseViewController.swift in Sources */,
 				0FACA5312AE97F9800589041 /* RequestBuilder.swift in Sources */,
+				0FAE6EE82AE9D9B60058D7EA /* Parameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

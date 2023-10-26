@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct SaldoRequest: Codable {
+struct SaldoRequest: Encodable {
     let firebaseID, monthNumber, year: String
 
     enum CodingKeys: String, CodingKey {
