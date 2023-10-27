@@ -6,36 +6,32 @@
 //
 
 import Foundation
-// Enum criado para organizar de maneira escalavel as respostas de erro da camada network
 enum NetworkError: Error {
-   case invalidURL
-   case noData
-   case invalidResponse
-   case decodingError(Error)
-   case networkFailure(Error)
-   case invalidJson
+case invalidURL(url: String)
+case urlConstructionError
+case noData
+case invalidResponse
+case decodingError(Error)
+case networkFailure(Error)
 }
 
-
-extension NetworkError : LocalizedError {
+extension NetworkError: LocalizedError {
     var errorDescription: String? {
         switch self {
-            case .invalidURL:
-                return "URL invalida."
-            case .noData:
-                return "URL invalida."
-            case .invalidResponse:
-                return "URL invalida."
-            case .decodingError(let error):
-                return "Erro ao decodificar, detalhe do erro: \(error.localizedDescription)"
-            case .networkFailure(let error):
-                return "Falha na rede, detalhe do erro: \(error.localizedDescription)"
-                
-            case .invalidJson:
-                return "Json invalido."
+        case .invalidURL(let url):
+            return "URL inválida -> \(url)"
+        case .urlConstructionError:
+            return "Falha na construção da URL"
+        case .noData:
+            return "Dados não recebidos da API."
+        case .invalidResponse:
+            return "Resposta inválida da API."
+        case .decodingError(let error):
+            return "Decodificação falhou: \(error.localizedDescription)"
+        case .networkFailure(let error):
+            return "Falha na rede: \(error.localizedDescription)"
         }
-        
-        
-        
     }
 }
+
+

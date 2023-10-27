@@ -12,6 +12,10 @@
 		0F18C37D2A97ED3D005B281A /* UITextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18C37C2A97ED3D005B281A /* UITextField + Extension.swift */; };
 		0F3064182AA1368200F05B0B /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F3064172AA1368200F05B0B /* Pacifico.ttf */; };
 		0F30641C2AA13F4B00F05B0B /* RegisterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30641B2AA13F4B00F05B0B /* RegisterViewDelegate.swift */; };
+		0F4703D22AEB328800030825 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4703D12AEB328800030825 /* HomeViewModelProtocol.swift */; };
+		0F4703D82AEB42F100030825 /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4703D72AEB42F100030825 /* ExpenseList.swift */; };
+		0F4703DB2AEB47A200030825 /* HomeCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4703DA2AEB47A200030825 /* HomeCustomTableViewCell.swift */; };
+		0F4703DD2AEB4A0F00030825 /* HomeScreenCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4703DC2AEB4A0F00030825 /* HomeScreenCustomTableViewCell.swift */; };
 		0F4D16472AA018590050F4F1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D16462AA018590050F4F1 /* LoadingView.swift */; };
 		0F4D16492AA018730050F4F1 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D16482AA018730050F4F1 /* LoadingViewController.swift */; };
 		0F4D164E2AA01BFF0050F4F1 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D164D2AA01BFF0050F4F1 /* UIImage + Extension.swift */; };
@@ -38,10 +42,10 @@
 		0FAE6EEA2AE9FA830058D7EA /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAE6EE92AE9FA830058D7EA /* NetworkLogger.swift */; };
 		0FB755E52ABB50FA00E4DF3E /* InsertExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB755E42ABB50FA00E4DF3E /* InsertExpenseView.swift */; };
 		0FB755E72ABB516700E4DF3E /* InsertExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB755E62ABB516700E4DF3E /* InsertExpenseViewController.swift */; };
-		0FBCEE062AE892CD0045F279 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE052AE892CD0045F279 /* ServiceManager.swift */; };
+		0FBCEE062AE892CD0045F279 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE052AE892CD0045F279 /* APIClient.swift */; };
 		0FBCEE082AE894730045F279 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE072AE894730045F279 /* HTTPMethod.swift */; };
 		0FBCEE0A2AE895120045F279 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE092AE895120045F279 /* NetworkError.swift */; };
-		0FBCEE0C2AE898800045F279 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE0B2AE898800045F279 /* NetworkLayer.swift */; };
+		0FBCEE0C2AE898800045F279 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE0B2AE898800045F279 /* HTTPClient.swift */; };
 		0FBCEE0F2AE8A7400045F279 /* SaldoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE0E2AE8A7400045F279 /* SaldoResponse.swift */; };
 		0FBCEE112AE8A9640045F279 /* SaldoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCEE102AE8A9640045F279 /* SaldoRequest.swift */; };
 		0FDC92532A40ACAE000A4CF8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC92522A40ACAE000A4CF8 /* UserModel.swift */; };
@@ -60,6 +64,10 @@
 		0F18C37C2A97ED3D005B281A /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
 		0F3064172AA1368200F05B0B /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		0F30641B2AA13F4B00F05B0B /* RegisterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewDelegate.swift; sourceTree = "<group>"; };
+		0F4703D12AEB328800030825 /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		0F4703D72AEB42F100030825 /* ExpenseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseList.swift; sourceTree = "<group>"; };
+		0F4703DA2AEB47A200030825 /* HomeCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomTableViewCell.swift; sourceTree = "<group>"; };
+		0F4703DC2AEB4A0F00030825 /* HomeScreenCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCustomTableViewCell.swift; sourceTree = "<group>"; };
 		0F4D16462AA018590050F4F1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0F4D16482AA018730050F4F1 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		0F4D164D2AA01BFF0050F4F1 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
@@ -88,10 +96,10 @@
 		0FAE6EE92AE9FA830058D7EA /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		0FB755E42ABB50FA00E4DF3E /* InsertExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertExpenseView.swift; path = ../../../../../InsertExpenseView.swift; sourceTree = "<group>"; };
 		0FB755E62ABB516700E4DF3E /* InsertExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertExpenseViewController.swift; path = ../../../../../InsertExpenseViewController.swift; sourceTree = "<group>"; };
-		0FBCEE052AE892CD0045F279 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		0FBCEE052AE892CD0045F279 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		0FBCEE072AE894730045F279 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		0FBCEE092AE895120045F279 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		0FBCEE0B2AE898800045F279 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		0FBCEE0B2AE898800045F279 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		0FBCEE0E2AE8A7400045F279 /* SaldoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoResponse.swift; sourceTree = "<group>"; };
 		0FBCEE102AE8A9640045F279 /* SaldoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoRequest.swift; sourceTree = "<group>"; };
 		0FDC92522A40ACAE000A4CF8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -126,6 +134,25 @@
 				0F18C37A2A97E782005B281A /* UserViewModel.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		0F4703D32AEB42C200030825 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FBCEE0E2AE8A7400045F279 /* SaldoResponse.swift */,
+				0FBCEE102AE8A9640045F279 /* SaldoRequest.swift */,
+				0F4703D72AEB42F100030825 /* ExpenseList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F4703D92AEB478C00030825 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0F4703DA2AEB47A200030825 /* HomeCustomTableViewCell.swift */,
+				0F4703DC2AEB4A0F00030825 /* HomeScreenCustomTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		0F4D16452AA0183E0050F4F1 /* Loading */ = {
@@ -234,10 +261,10 @@
 		0F8EB15F2AE891D200C72648 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				0FBCEE052AE892CD0045F279 /* ServiceManager.swift */,
+				0FBCEE052AE892CD0045F279 /* APIClient.swift */,
 				0FBCEE072AE894730045F279 /* HTTPMethod.swift */,
 				0FBCEE092AE895120045F279 /* NetworkError.swift */,
-				0FBCEE0B2AE898800045F279 /* NetworkLayer.swift */,
+				0FBCEE0B2AE898800045F279 /* HTTPClient.swift */,
 				0FACA52B2AE9757600589041 /* EndPoint.swift */,
 				0FACA5302AE97F9800589041 /* RequestBuilder.swift */,
 				0FAE6EE52AE9C81A0058D7EA /* DefaultRequestBuilder.swift */,
@@ -267,8 +294,6 @@
 		0FBCEE0D2AE8A72D0045F279 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0FBCEE0E2AE8A7400045F279 /* SaldoResponse.swift */,
-				0FBCEE102AE8A9640045F279 /* SaldoRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,10 +301,13 @@
 		0FDC92552A40B4C4000A4CF8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0F4703D92AEB478C00030825 /* Cell */,
+				0F4703D32AEB42C200030825 /* Model */,
 				0FACA52D2AE97CD100589041 /* Service */,
 				0FDC92562A40B51C000A4CF8 /* HomeViewController.swift */,
 				0FDC92582A40B538000A4CF8 /* HomeViewCoordinator.swift */,
 				0FDC925A2A40B54A000A4CF8 /* HomeViewModel.swift */,
+				0F4703D12AEB328800030825 /* HomeViewModelProtocol.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -445,9 +473,11 @@
 				0FAE6EE62AE9C81A0058D7EA /* DefaultRequestBuilder.swift in Sources */,
 				0FACA52C2AE9757600589041 /* EndPoint.swift in Sources */,
 				0FBCEE0A2AE895120045F279 /* NetworkError.swift in Sources */,
+				0F4703D22AEB328800030825 /* HomeViewModelProtocol.swift in Sources */,
 				0FBCEE0F2AE8A7400045F279 /* SaldoResponse.swift in Sources */,
 				0F8CD26F2A3F7F4F000B325E /* Coordinator.swift in Sources */,
 				0F18C37D2A97ED3D005B281A /* UITextField + Extension.swift in Sources */,
+				0F4703DD2AEB4A0F00030825 /* HomeScreenCustomTableViewCell.swift in Sources */,
 				0FDC925B2A40B54A000A4CF8 /* HomeViewModel.swift in Sources */,
 				0FDC92662A40B90A000A4CF8 /* RegisterViewModel.swift in Sources */,
 				0FDC92572A40B51C000A4CF8 /* HomeViewController.swift in Sources */,
@@ -456,16 +486,18 @@
 				0FBCEE082AE894730045F279 /* HTTPMethod.swift in Sources */,
 				0FDC925D2A40B6A8000A4CF8 /* UIViewController + Extension.swift in Sources */,
 				0FB755E52ABB50FA00E4DF3E /* InsertExpenseView.swift in Sources */,
-				0FBCEE062AE892CD0045F279 /* ServiceManager.swift in Sources */,
+				0FBCEE062AE892CD0045F279 /* APIClient.swift in Sources */,
 				0FDC92642A40B8FC000A4CF8 /* RegisterViewController.swift in Sources */,
-				0FBCEE0C2AE898800045F279 /* NetworkLayer.swift in Sources */,
+				0FBCEE0C2AE898800045F279 /* HTTPClient.swift in Sources */,
 				0F8CD24E2A3F7391000B325E /* SmartMoney.xcdatamodeld in Sources */,
 				0FDC92532A40ACAE000A4CF8 /* UserModel.swift in Sources */,
+				0F4703DB2AEB47A200030825 /* HomeCustomTableViewCell.swift in Sources */,
 				0F4D164E2AA01BFF0050F4F1 /* UIImage + Extension.swift in Sources */,
 				0F8CD2462A3F7391000B325E /* SceneDelegate.swift in Sources */,
 				0FACA52F2AE97CE900589041 /* HomeService.swift in Sources */,
 				0FDC92622A40B8E9000A4CF8 /* RegisterCoordinator.swift in Sources */,
 				0FAE6EEA2AE9FA830058D7EA /* NetworkLogger.swift in Sources */,
+				0F4703D82AEB42F100030825 /* ExpenseList.swift in Sources */,
 				0FB755E72ABB516700E4DF3E /* InsertExpenseViewController.swift in Sources */,
 				0FACA5312AE97F9800589041 /* RequestBuilder.swift in Sources */,
 				0FAE6EE82AE9D9B60058D7EA /* Parameters.swift in Sources */,
@@ -515,10 +547,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -573,6 +602,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -610,6 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = devItalo.SmartMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -639,6 +670,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = devItalo.SmartMoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

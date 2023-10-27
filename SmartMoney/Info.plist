@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>FirebaseAutomaticScreenReportingEnabled</key>
-	<string>NO</string>
+	<false/>
 	<key>baseUrl</key>
 	<string>http://192.168.100.73:4756/ApiSmartMoney</string>
 	<key>UIAppFonts</key>

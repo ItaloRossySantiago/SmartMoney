@@ -7,21 +7,26 @@
 
 import Foundation
 
-class DefaultRequestBuilder : RequestBuilder {
-    func buildRequest(with endPoint: EndPoint, baseUrl: URL) -> URLRequest {
-       
-        var request = URLRequest(url: baseUrl)
-        request.httpMethod = endPoint.method.rawValue
-        request.allHTTPHeaderFields = endPoint.headers
-        if let parameters = endPoint.parameters {
-            let encoder = JSONEncoder()
-            switch parameters{
-                case .dictionary(let dictionary):
-                    request.httpBody = try? JSONSerialization.data(withJSONObject: dictionary, options: .fragmentsAllowed)
+class DefaultRequestBuilder: RequestBuilder {
+    func buildRequest(with endpoint: Endpoint, baseURL: String) -> URLRequest? {
+        let completeURLString = baseURL + endpoint.url
+        
+        guard let url = URL(string: completeURLString) else { return nil }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = endpoint.method.rawValue
+        request.allHTTPHeaderFields = endpoint.headers
+        
+        if let parameters = endpoint.parameters {
+            switch parameters {
+            case .dictionary(let dictionary):
+                request.httpBody = try? JSONSerialization.data(withJSONObject: dictionary, options: .fragmentsAllowed)
             case .encodable(let encodable):
-                    request.httpBody = try?  encoder.encode(encodable)
+                request.httpBody = try? JSONEncoder().encode(encodable)
             }
         }
+        
         return request
     }
 }
+

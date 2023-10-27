@@ -12,6 +12,18 @@ class HomeViewModel {
     // Adicione a implementação do ViewModel aqui
     let firebaseAuth = Auth.auth()
     let firestore = Firestore.firestore()
+    let service: HomeService = HomeService()
+    private var expenseList:[ExpenseModel]  = []
+    public var numberOfRowsInSection: Int {
+        return expenseList.count
+    }
+    
+    private var delegate: HomeViewModelProtocol?
+    
+    public func delegate(delegate: HomeViewModelProtocol?) {
+        self.delegate = delegate
+    }
+    
     public func signOutUser() {
         do {
           try firebaseAuth.signOut()
@@ -40,20 +52,34 @@ class HomeViewModel {
     
     public func getSaldo() {
         let idUser = firebaseAuth.currentUser?.uid ?? ""
-        let saldoRequest:SaldoRequest = SaldoRequest(firebaseID: idUser, monthNumber: "10", year: "2023")
-        let parameters:Parameters = .encodable(saldoRequest)
-        let endPoint:EndPoint = EndPoint(path: "/getSaldo", method: .post, parameters: parameters)
-
-        ServiceManager.shared.request(with: endPoint, decodeType: SaldoResponse.self) { result in
+        service.getSaldo(idUser: idUser) { result in
             switch result {
             case .success(let success):
-                print(success)
+                self.delegate?.sucessGetSaldo(saldoresponse: success)
             case .failure(let failure):
-                print(failure)
+                self.delegate?.errorGetSaldo()
             }
-             
         }
+    }
+    
+    public func getListExpense() {
+        let idUser = firebaseAuth.currentUser?.uid ?? ""
+        service.getListExpense(idUser: idUser) { result in
+            switch result {
+            case .success(let success):
+                self.expenseList = success
+                self.delegate?.sucessGetListExpenses(listExpense: success)
+            case .failure(let failure):
+                self.delegate?.errorGetListExpenses()
+            }
+        }
+    }
+    
+    func loadCurrentExpense(indexPath: IndexPath) -> ExpenseModel {
+        return expenseList[indexPath.row]
     }
 
     
 }
+
+

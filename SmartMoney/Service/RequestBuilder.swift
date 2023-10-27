@@ -8,5 +8,5 @@
 import Foundation
 
 protocol RequestBuilder {
-    func buildRequest(with endPoint:EndPoint, baseUrl:URL) -> URLRequest
+    func buildRequest(with endpoint: Endpoint, baseURL: String) -> URLRequest?
 }

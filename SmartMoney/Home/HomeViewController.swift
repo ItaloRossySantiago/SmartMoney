@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
         setupView()
         configConstraints()
         hideKeyBoardWhenTappedAround()
+        configTableViewProtocols()
+        
        
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -22,8 +24,9 @@ class HomeViewController: UIViewController {
         homeViewModel.importUserData  { result in
             self.setupUser(result["nome"] ?? "" , result["url_img"] ?? "")
         }
-        
+        homeViewModel.delegate(delegate: self)
         homeViewModel.getSaldo()
+        homeViewModel.getListExpense()
     }
     
     // CLOUSURES
@@ -42,14 +45,16 @@ class HomeViewController: UIViewController {
         view.addSubview(logoffLabel)
         view.addSubview(newGastoImageView)
         view.addSubview(incluirDespLabel)
-        panel.superview?.addSubview(criarContaLabel)
+        panel.superview?.addSubview(saldoLabel)
         panel.superview?.addSubview(despesasLabel)
+        
         //panel.setCardShadow()
         
         view.addSubview(panelList)
         //panelList.setCardShadow()
         panelList.superview?.addSubview(listDespesasLabel)
         panelList.addSubview(verTudoLabel)
+        panelList.addSubview(tableView)
         
         
         
@@ -61,6 +66,11 @@ class HomeViewController: UIViewController {
         profileImageView.sd_setImage(with: URL(string: url_img), completed: nil)
     }
     
+    public func configTableViewProtocols() {
+        tableView.delegate   = self
+        tableView.dataSource = self
+    }
+    
     lazy var panel: UIView = {
         let panel = UIView()
         panel.translatesAutoresizingMaskIntoConstraints = false
@@ -70,7 +80,7 @@ class HomeViewController: UIViewController {
         return panel
     }()
     
-    lazy var criarContaLabel: UILabel = {
+    lazy var saldoLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font =  UIFont(name: "OpenSansCondensed-Medium", size: 35)
@@ -143,7 +153,6 @@ class HomeViewController: UIViewController {
     }()
     
     @objc func insertExpenseAction() {
-        print("tetinha")
         self.onInsertExpenseTappedClouser?()
     }
     
@@ -192,6 +201,15 @@ class HomeViewController: UIViewController {
         return panel
     }()
     
+    
+    lazy var tableView:UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.separatorStyle = .singleLine
+        tableView.register(HomeCustomTableViewCell.self, forCellReuseIdentifier: HomeCustomTableViewCell.identifier)
+        return tableView
+    }()
+    
     lazy var verTudoLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -238,8 +256,8 @@ class HomeViewController: UIViewController {
             
             
             
-            criarContaLabel.centerXAnchor.constraint(equalTo: panel.centerXAnchor),
-            criarContaLabel.topAnchor.constraint(equalTo: despesasLabel.bottomAnchor, constant: 3),
+            saldoLabel.centerXAnchor.constraint(equalTo: panel.centerXAnchor),
+            saldoLabel.topAnchor.constraint(equalTo: despesasLabel.bottomAnchor, constant: 3),
             
             despesasLabel.topAnchor.constraint(equalTo: panel.topAnchor, constant: 125),
             despesasLabel.centerXAnchor.constraint(equalTo: panel.centerXAnchor),
@@ -265,6 +283,52 @@ class HomeViewController: UIViewController {
             verTudoLabel.centerYAnchor.constraint(equalTo: listDespesasLabel.centerYAnchor),
             verTudoLabel.trailingAnchor.constraint(equalTo: panelList.trailingAnchor, constant: -20),
             
+            tableView.topAnchor.constraint(equalTo: listDespesasLabel.bottomAnchor, constant: 5),
+            tableView.bottomAnchor.constraint(equalTo: panelList.bottomAnchor, constant: -5),
+            tableView.leadingAnchor.constraint(equalTo: panelList.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: panelList.trailingAnchor),
+            
         ])
     }
+}
+
+extension HomeViewController : HomeViewModelProtocol {
+    func sucessGetListExpenses(listExpense: ExpenseList) {
+        configTableViewProtocols()
+        tableView.reloadData()
+    }
+    
+    func errorGetListExpenses() {
+        
+    }
+    
+    func sucessGetSaldo(saldoresponse:SaldoResponse) {
+        saldoLabel.text = "R$ " + saldoresponse.saldo
+    }
+    
+    func errorGetSaldo() {
+        print ("Error getSaldo, implementar alert.")
+    }
+    
+    
+}
+
+extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return homeViewModel.numberOfRowsInSection
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeCustomTableViewCell.identifier, for: indexPath) as? HomeCustomTableViewCell
+        cell?.setupHomeCell(data: homeViewModel.loadCurrentExpense(indexPath: indexPath))
+        return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    
 }
