@@ -78,8 +78,8 @@
             filePath = "SmartMoney/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "insertExpenseAction()"
             landmarkType = "7">
             <Locations>
@@ -158,8 +158,8 @@
             filePath = "SmartMoney/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "324"
-            endingLineNumber = "324"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -193,6 +193,21 @@
                   endingLineNumber = "322"
                   offsetFromSymbolStart = "160">
                </Location>
+               <Location
+                  uuid = "73FDCAC5-C27D-4C91-8517-3B5AD0306651 - e0e8cd96be8d55bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartMoney.HomeViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "SmartMoney"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/italo/Desktop/Projects/SmartMoney/SmartMoney/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "330"
+                  endingLineNumber = "330"
+                  offsetFromSymbolStart = "160">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -206,8 +221,8 @@
             filePath = "SmartMoney/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "sucessGetListExpenses(listExpense:)"
             landmarkType = "7">
             <Locations>
@@ -256,6 +271,21 @@
                   endingLineNumber = "296"
                   offsetFromSymbolStart = "76">
                </Location>
+               <Location
+                  uuid = "17D7FE17-035A-4384-8578-F71D0BB17E61 - a9e4999acc4ba122"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartMoney.HomeViewController.sucessGetListExpenses(listExpense: Swift.Array&lt;SmartMoney.ExpenseModel&gt;) -&gt; ()"
+                  moduleName = "SmartMoney"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/italo/Desktop/Projects/SmartMoney/SmartMoney/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "304"
+                  endingLineNumber = "304"
+                  offsetFromSymbolStart = "76">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -263,7 +293,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DEC3F476-403C-4F24-8404-E06EE4BD356C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartMoney/Home/HomeViewModel.swift"
@@ -279,7 +309,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E8FADC98-D667-4827-B88B-D05B799FFED9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartMoney/Home/HomeViewModel.swift"
@@ -476,9 +506,25 @@
             filePath = "SmartMoney/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "320"
-            endingLineNumber = "320"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF210E9D-4890-42C3-9FE1-665B4C452817"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmartMoney/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -29,6 +29,12 @@ class HomeViewController: UIViewController {
         homeViewModel.getListExpense()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        homeViewModel.getSaldo()
+        homeViewModel.getListExpense()
+    }
+    
     // CLOUSURES
     // var ontappedSelectImage:(() -> Void)?
     var onLogoffTappedClouser:(() -> Void)?
@@ -55,6 +61,9 @@ class HomeViewController: UIViewController {
         panelList.superview?.addSubview(listDespesasLabel)
         panelList.addSubview(verTudoLabel)
         panelList.addSubview(tableView)
+        view.addSubview(cadastrosLabel)
+        view.addSubview(buttonCategory)
+        view.addSubview(buttonCards)
         
         
         
@@ -220,6 +229,35 @@ class HomeViewController: UIViewController {
         return label
     }()
     
+    lazy var cadastrosLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font =  UIFont.openSansBold
+        label.text = "Cadastros:"
+        label.textColor = .black
+        return label
+    }()
+    
+    lazy var buttonCategory: CustomButton = {
+        let button = CustomButton()
+        button.setupButton(image: categoryIcon,textButton: "Categorias")
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.shadowOpacity = 0.5
+        button.layer.shadowRadius = 12
+        button.layer.shadowColor = UIColor.black.cgColor
+        return button
+    }()
+    
+    lazy var buttonCards: CustomButton = {
+        let button = CustomButton()
+        button.setupButton(image: cardIcon, textButton: "Cartões")
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.shadowOpacity = 0.5
+        button.layer.shadowRadius = 12
+        button.layer.shadowColor = UIColor.black.cgColor
+        return button
+    }()
+    
     @objc func logoffAction() {
         homeViewModel.signOutUser()
         self.onLogoffTappedClouser?()
@@ -287,6 +325,15 @@ class HomeViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: panelList.bottomAnchor, constant: -5),
             tableView.leadingAnchor.constraint(equalTo: panelList.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: panelList.trailingAnchor),
+            
+            cadastrosLabel.topAnchor.constraint(equalTo: panelList.bottomAnchor, constant:10),
+            cadastrosLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            
+            buttonCategory.topAnchor.constraint(equalTo: cadastrosLabel.bottomAnchor, constant: 15),
+            buttonCategory.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            
+            buttonCards.topAnchor.constraint(equalTo: buttonCategory.topAnchor),
+            buttonCards.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
             
         ])
     }
