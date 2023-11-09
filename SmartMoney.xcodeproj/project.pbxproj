@@ -25,6 +25,15 @@
 		0F4D16492AA018730050F4F1 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D16482AA018730050F4F1 /* LoadingViewController.swift */; };
 		0F4D164E2AA01BFF0050F4F1 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D164D2AA01BFF0050F4F1 /* UIImage + Extension.swift */; };
 		0F4D16562AA024DF0050F4F1 /* SmartMoney.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0F4D16552AA024DF0050F4F1 /* SmartMoney.gif */; };
+		0F5400EC2AFC561400A663DB /* CardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5400E72AFC561400A663DB /* CardCoordinator.swift */; };
+		0F5400ED2AFC561400A663DB /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5400E82AFC561400A663DB /* CardViewController.swift */; };
+		0F5400EE2AFC561400A663DB /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5400E92AFC561400A663DB /* CardProtocol.swift */; };
+		0F5400EF2AFC561400A663DB /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5400EA2AFC561400A663DB /* CardViewModel.swift */; };
+		0F5400F02AFC561400A663DB /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5400EB2AFC561400A663DB /* CardService.swift */; };
+		0F5400F32AFC630100A663DB /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5400F22AFC630100A663DB /* CardTableViewCell.swift */; };
+		0F5400F52AFC631700A663DB /* CardScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5400F42AFC631700A663DB /* CardScreenTableViewCell.swift */; };
+		0F8B27192AFC6F9B001F4837 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8B27182AFC6F9B001F4837 /* CategoryTableViewCell.swift */; };
+		0F8B271B2AFC6FB0001F4837 /* CategoryScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8B271A2AFC6FB0001F4837 /* CategoryScreenTableViewCell.swift */; };
 		0F8CD2442A3F7391000B325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CD2432A3F7391000B325E /* AppDelegate.swift */; };
 		0F8CD2462A3F7391000B325E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CD2452A3F7391000B325E /* SceneDelegate.swift */; };
 		0F8CD24E2A3F7391000B325E /* SmartMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CD24C2A3F7391000B325E /* SmartMoney.xcdatamodeld */; };
@@ -88,6 +97,15 @@
 		0F4D16482AA018730050F4F1 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		0F4D164D2AA01BFF0050F4F1 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		0F4D16552AA024DF0050F4F1 /* SmartMoney.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SmartMoney.gif; sourceTree = "<group>"; };
+		0F5400E72AFC561400A663DB /* CardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCoordinator.swift; sourceTree = "<group>"; };
+		0F5400E82AFC561400A663DB /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		0F5400E92AFC561400A663DB /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
+		0F5400EA2AFC561400A663DB /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		0F5400EB2AFC561400A663DB /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		0F5400F22AFC630100A663DB /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		0F5400F42AFC631700A663DB /* CardScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreenTableViewCell.swift; sourceTree = "<group>"; };
+		0F8B27182AFC6F9B001F4837 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		0F8B271A2AFC6FB0001F4837 /* CategoryScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreenTableViewCell.swift; sourceTree = "<group>"; };
 		0F8CD2402A3F7391000B325E /* SmartMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8CD2432A3F7391000B325E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F8CD2452A3F7391000B325E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +179,7 @@
 		0F31CFD42AF1DD3000A16E33 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0F8B27172AFC6F1C001F4837 /* Cell */,
 				0F31CFED2AF1DE4700A16E33 /* CategoryCoordinator.swift */,
 				0F31CFEE2AF1DE4700A16E33 /* CategoryViewController.swift */,
 				0F31CFEF2AF1DE4700A16E33 /* CategoryProtocol.swift */,
@@ -206,6 +225,37 @@
 			path = Gifs;
 			sourceTree = "<group>";
 		};
+		0F5400E62AFC55C800A663DB /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				0F5400F12AFC62B700A663DB /* Cell */,
+				0F5400E72AFC561400A663DB /* CardCoordinator.swift */,
+				0F5400E82AFC561400A663DB /* CardViewController.swift */,
+				0F5400E92AFC561400A663DB /* CardProtocol.swift */,
+				0F5400EA2AFC561400A663DB /* CardViewModel.swift */,
+				0F5400EB2AFC561400A663DB /* CardService.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		0F5400F12AFC62B700A663DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0F5400F22AFC630100A663DB /* CardTableViewCell.swift */,
+				0F5400F42AFC631700A663DB /* CardScreenTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0F8B27172AFC6F1C001F4837 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0F8B27182AFC6F9B001F4837 /* CategoryTableViewCell.swift */,
+				0F8B271A2AFC6FB0001F4837 /* CategoryScreenTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		0F8CD2372A3F7391000B325E = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +279,7 @@
 		0F8CD2422A3F7391000B325E /* SmartMoney */ = {
 			isa = PBXGroup;
 			children = (
+				0F5400E62AFC55C800A663DB /* Card */,
 				0F8F082A2AF3FB9E00C5578A /* ListExpenses */,
 				0F31CFD42AF1DD3000A16E33 /* Category */,
 				0FBA3DC92AEC220D00A6A8B0 /* CustomButton */,
@@ -521,11 +572,14 @@
 				0FDC92592A40B538000A4CF8 /* HomeViewCoordinator.swift in Sources */,
 				0F31CFF22AF1DE4700A16E33 /* CategoryCoordinator.swift in Sources */,
 				0FBCEE112AE8A9640045F279 /* SaldoRequest.swift in Sources */,
+				0F5400EE2AFC561400A663DB /* CardProtocol.swift in Sources */,
 				0F9637362A43BC0F009B256A /* UIFont + Extension.swift in Sources */,
 				0F8CD2792A3F83E2000B325E /* UIColor + Extension.swift in Sources */,
 				0F31CFF52AF1DE4700A16E33 /* CategoryViewModel.swift in Sources */,
 				0F8CD2742A3F803F000B325E /* LoginViewController.swift in Sources */,
+				0F8B271B2AFC6FB0001F4837 /* CategoryScreenTableViewCell.swift in Sources */,
 				0F8CD2722A3F7FAD000B325E /* LoginCoordinator.swift in Sources */,
+				0F5400F02AFC561400A663DB /* CardService.swift in Sources */,
 				0F8CD2442A3F7391000B325E /* AppDelegate.swift in Sources */,
 				0F8CD2762A3F806E000B325E /* LoginViewModel.swift in Sources */,
 				0F18C37B2A97E782005B281A /* UserViewModel.swift in Sources */,
@@ -536,6 +590,7 @@
 				0F4703D22AEB328800030825 /* HomeViewModelProtocol.swift in Sources */,
 				0FBCEE0F2AE8A7400045F279 /* SaldoResponse.swift in Sources */,
 				0F8CD26F2A3F7F4F000B325E /* Coordinator.swift in Sources */,
+				0F5400EF2AFC561400A663DB /* CardViewModel.swift in Sources */,
 				0F18C37D2A97ED3D005B281A /* UITextField + Extension.swift in Sources */,
 				0F8F08302AF3FBBA00C5578A /* ListExpensesCoordinator.swift in Sources */,
 				0F8F08312AF3FBBA00C5578A /* ListExpensesViewController.swift in Sources */,
@@ -549,6 +604,8 @@
 				0F4D16492AA018730050F4F1 /* LoadingViewController.swift in Sources */,
 				0FBCEE082AE894730045F279 /* HTTPMethod.swift in Sources */,
 				0FDC925D2A40B6A8000A4CF8 /* UIViewController + Extension.swift in Sources */,
+				0F8B27192AFC6F9B001F4837 /* CategoryTableViewCell.swift in Sources */,
+				0F5400ED2AFC561400A663DB /* CardViewController.swift in Sources */,
 				0FB755E52ABB50FA00E4DF3E /* InsertExpenseView.swift in Sources */,
 				0FBCEE062AE892CD0045F279 /* APIClient.swift in Sources */,
 				0FDC92642A40B8FC000A4CF8 /* RegisterViewController.swift in Sources */,
@@ -556,15 +613,18 @@
 				0F8CD24E2A3F7391000B325E /* SmartMoney.xcdatamodeld in Sources */,
 				0FDC92532A40ACAE000A4CF8 /* UserModel.swift in Sources */,
 				0F4703DB2AEB47A200030825 /* HomeCustomTableViewCell.swift in Sources */,
+				0F5400F32AFC630100A663DB /* CardTableViewCell.swift in Sources */,
 				0FBA3DCB2AEC224200A6A8B0 /* CustomButton.swift in Sources */,
 				0F8F08342AF3FBBA00C5578A /* ListExpensesService.swift in Sources */,
 				0F4D164E2AA01BFF0050F4F1 /* UIImage + Extension.swift in Sources */,
 				0F8CD2462A3F7391000B325E /* SceneDelegate.swift in Sources */,
+				0F5400F52AFC631700A663DB /* CardScreenTableViewCell.swift in Sources */,
 				0FACA52F2AE97CE900589041 /* HomeService.swift in Sources */,
 				0FDC92622A40B8E9000A4CF8 /* RegisterCoordinator.swift in Sources */,
 				0FAE6EEA2AE9FA830058D7EA /* NetworkLogger.swift in Sources */,
 				0F31CFF62AF1DE4700A16E33 /* CategoryService.swift in Sources */,
 				0F4703D82AEB42F100030825 /* ExpenseList.swift in Sources */,
+				0F5400EC2AFC561400A663DB /* CardCoordinator.swift in Sources */,
 				0F8F08332AF3FBBA00C5578A /* ListExpensesViewModel.swift in Sources */,
 				0FB755E72ABB516700E4DF3E /* InsertExpenseViewController.swift in Sources */,
 				0FACA5312AE97F9800589041 /* RequestBuilder.swift in Sources */,

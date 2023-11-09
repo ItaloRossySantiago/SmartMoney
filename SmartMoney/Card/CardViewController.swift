@@ -1,9 +1,9 @@
 import Foundation
 import UIKit
 
-class CategoryViewController: UIViewController {
-    let viewModel = CategoryViewModel()
-    //MARK Clousure
+class CardViewController: UIViewController {
+    let viewModel = CardViewModel()
+    
     var returnToHomeClousure:(() -> Void)?
     
     override func viewDidLoad() {
@@ -19,7 +19,7 @@ class CategoryViewController: UIViewController {
     private func setupView() {
         view.addSubview(returnButton)
         view.addSubview(titleLabel)
-        view.addSubview(newCategoryButton)
+        view.addSubview(newCardButton)
         view.addSubview(panelList)
         panelList.addSubview(listTableView)
     }
@@ -39,10 +39,10 @@ class CategoryViewController: UIViewController {
             titleLabel.centerYAnchor.constraint(equalTo: returnButton.centerYAnchor),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            newCategoryButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            newCategoryButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
-            newCategoryButton.widthAnchor.constraint(equalToConstant: 50),
-            newCategoryButton.heightAnchor.constraint(equalToConstant: 50),
+            newCardButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+            newCardButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+            newCardButton.widthAnchor.constraint(equalToConstant: 50),
+            newCardButton.heightAnchor.constraint(equalToConstant: 50),
             
             panelList.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30),
             panelList.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 7),
@@ -53,6 +53,7 @@ class CategoryViewController: UIViewController {
             listTableView.bottomAnchor.constraint(equalTo: panelList.bottomAnchor, constant: -5),
             listTableView.leadingAnchor.constraint(equalTo: panelList.leadingAnchor),
             listTableView.trailingAnchor.constraint(equalTo: panelList.trailingAnchor),
+    
         ])
     }
     
@@ -71,15 +72,15 @@ class CategoryViewController: UIViewController {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Lista de Categorias"
+        label.text = "Lista de Cartões"
         label.font = UIFont.openSansBold
         
         return label
     }()
     
-    lazy var newCategoryButton:  UIImageView = {
+    lazy var newCardButton:  UIImageView = {
         let image = UIImageView()
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(insertNewCategory))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(insertNewCard))
         image.translatesAutoresizingMaskIntoConstraints = false
         image.layer.cornerRadius = 25
         image.contentMode = .scaleAspectFill
@@ -107,32 +108,33 @@ class CategoryViewController: UIViewController {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorStyle = .singleLine
-        tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: CategoryTableViewCell.identifier)
+        tableView.register(CardTableViewCell.self, forCellReuseIdentifier: CardTableViewCell.identifier)
         return tableView
     }()
 
     
+    
+    
     @objc func returnToHome() {
         self.returnToHomeClousure?()
     }
-    @objc func insertNewCategory() {
+    
+    @objc func insertNewCard() {
         //  self.returnToHomeClousure?()
-        print("Inserir categoria")
+        print("Inserir cartão")
     }
     
 }
 
 
-extension CategoryViewController : UITableViewDataSource, UITableViewDelegate {
-    
-    
+extension CardViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.identifier, for: indexPath) as? CategoryTableViewCell
-        cell?.setupCategoryCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.identifier, for: indexPath) as? CardTableViewCell
+        cell?.setupCardCell()
         return  UITableViewCell()
     }
     

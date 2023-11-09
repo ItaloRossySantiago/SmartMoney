@@ -23,6 +23,17 @@ class HomeCoordinator: Coordinator {
             let insertVc = InsertExpenseViewController()
             self.navigationController.present(insertVc, animated: true)
         }
+        
+        viewController.onCategoryButtonTappedClouser = {
+            let categoryCordinator = CategoryCoordinator(navigationController: self.navigationController)
+            categoryCordinator.start()
+        }
+        
+        viewController.onCardButtonTappedClouser = {
+            let cardCordinator = CardCoordinator(navigationController: self.navigationController)
+            cardCordinator.start()
+        }
+        
    }
 
     required init(navigationController: UINavigationController) {

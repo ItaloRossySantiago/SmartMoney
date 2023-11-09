@@ -8,13 +8,14 @@
 import Foundation
 import UIKit
 
-class CategoryCoordinator: Coordinator {
+class CardCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     func start() {
         // Adicione a implementação do início do coordinator aqui
-        let viewController  = CategoryViewController()
+        let viewController  = CardViewController()
         self.navigationController.pushViewController(viewController, animated: true)
+        
         viewController.returnToHomeClousure = {
             self.navigationController.popViewController(animated: true)
         }

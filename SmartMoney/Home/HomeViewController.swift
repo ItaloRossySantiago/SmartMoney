@@ -36,9 +36,12 @@ class HomeViewController: UIViewController {
     }
     
     // CLOUSURES
-    // var ontappedSelectImage:(() -> Void)?
+
     var onLogoffTappedClouser:(() -> Void)?
+    var onCategoryButtonTappedClouser:(()-> Void)?
     var onInsertExpenseTappedClouser:(() ->Void)?
+    var onCardButtonTappedClouser:(() ->Void)?
+    
     private func setupView() {
         view.backgroundColor = UIColor(hexString: "#dde4e6")
         
@@ -245,6 +248,7 @@ class HomeViewController: UIViewController {
         button.layer.shadowOpacity = 0.5
         button.layer.shadowRadius = 12
         button.layer.shadowColor = UIColor.black.cgColor
+        button.button.addTarget(self, action: #selector(onCategoryButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -255,8 +259,17 @@ class HomeViewController: UIViewController {
         button.layer.shadowOpacity = 0.5
         button.layer.shadowRadius = 12
         button.layer.shadowColor = UIColor.black.cgColor
+        button.button.addTarget(self, action: #selector(onCardButtonTapped), for: .touchUpInside)
         return button
     }()
+    
+    @objc func onCategoryButtonTapped() {
+        self.onCategoryButtonTappedClouser?()
+    }
+    
+    @objc func onCardButtonTapped() {
+        self.onCardButtonTappedClouser?()
+    }
     
     @objc func logoffAction() {
         homeViewModel.signOutUser()
