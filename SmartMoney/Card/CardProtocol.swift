@@ -6,6 +6,7 @@
 //
 
 import Foundation
-protocol CardHomeViewModelProtocol {
-
+protocol CardViewModelProtocol {
+    func sucessGetListCard(listCard :CardList)
+    func errorGetListCard()
 }

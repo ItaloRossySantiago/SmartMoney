@@ -15,6 +15,14 @@ class CardViewController: UIViewController {
         view.backgroundColor = UIColor(hexString: "#dde4e6")
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.delegate(delegate: self)
+        viewModel.getListCard()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.getListCard()
+    }
     
     private func setupView() {
         view.addSubview(returnButton)
@@ -126,15 +134,29 @@ class CardViewController: UIViewController {
     
 }
 
+extension CardViewController : CardViewModelProtocol {
+    
+    func sucessGetListCard(listCard: CardList) {
+        configTableViewProtocols()
+        listTableView.reloadData()
+    }
+    
+    func errorGetListCard() {
+        //fazer alert
+    }
+    
+}
+
+
 
 extension CardViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.identifier, for: indexPath) as? CardTableViewCell
-        cell?.setupCardCell()
+        cell?.setupCardCell(data: viewModel.loadCurrentCategory(indexPath: indexPath))
         return  UITableViewCell()
     }
     

@@ -43,8 +43,7 @@ class CategoryTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCategoryCell() {
-        screen.categoryNameLabel.text = "Alimentação"
-        
+    public func setupCategoryCell(data:CategoryModel) {
+        screen.categoryNameLabel.text = data.categoryName
     }
 }

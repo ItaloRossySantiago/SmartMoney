@@ -14,6 +14,7 @@ class HomeViewModel {
     let firestore = Firestore.firestore()
     let service: HomeService = HomeService()
     private var expenseList:[ExpenseModel]  = []
+    
     public var numberOfRowsInSection: Int {
         return expenseList.count
     }

@@ -14,7 +14,7 @@ class CardScreenTableViewCell: UIView {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.layer.cornerRadius = 15
         image.contentMode = .scaleAspectFill
-        image.image = UIImage(named: "banco_pan")
+        //image.image = UIImage(named: "banco_pan")
         image.clipsToBounds = true
         return image
     }()

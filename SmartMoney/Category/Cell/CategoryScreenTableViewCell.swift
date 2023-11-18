@@ -14,7 +14,7 @@ class CategoryScreenTableViewCell: UIView {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.layer.cornerRadius = 15
         image.contentMode = .scaleAspectFill
-        image.image = UIImage(systemName: "fork.knife.circle.fill")
+        //image.image = UIImage(systemName: "fork.knife.circle.fill")
         image.tintColor = .systemRed
         image.clipsToBounds = true
         return image

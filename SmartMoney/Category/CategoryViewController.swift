@@ -15,6 +15,14 @@ class CategoryViewController: UIViewController {
         view.backgroundColor = UIColor(hexString: "#dde4e6")
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.delegate(delegate: self)
+        viewModel.getListCategory()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.getListCategory()
+    }
     
     private func setupView() {
         view.addSubview(returnButton)
@@ -122,17 +130,29 @@ class CategoryViewController: UIViewController {
     
 }
 
+extension CategoryViewController : CategoryViewModelProtocol {
+    
+    func sucessGetListCategory(listCategory: CategoryList) {
+        configTableViewProtocols()
+        listTableView.reloadData()
+    }
+    
+    func errorGetListCategory() {
+        //fazer alert
+    }
+    
+}
+
+
 
 extension CategoryViewController : UITableViewDataSource, UITableViewDelegate {
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.identifier, for: indexPath) as? CategoryTableViewCell
-        cell?.setupCategoryCell()
+        cell?.setupCategoryCell(data: viewModel.loadCurrentCategory(indexPath: indexPath))
         return  UITableViewCell()
     }
     

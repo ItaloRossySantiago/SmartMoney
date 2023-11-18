@@ -48,6 +48,10 @@
 		0F8F08322AF3FBBA00C5578A /* ListExpensesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8F082D2AF3FBBA00C5578A /* ListExpensesProtocol.swift */; };
 		0F8F08332AF3FBBA00C5578A /* ListExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8F082E2AF3FBBA00C5578A /* ListExpensesViewModel.swift */; };
 		0F8F08342AF3FBBA00C5578A /* ListExpensesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8F082F2AF3FBBA00C5578A /* ListExpensesService.swift */; };
+		0F92F0F62B091E4100FC42D6 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F92F0F52B091E4100FC42D6 /* CategoryModel.swift */; };
+		0F92F0F82B091ED900FC42D6 /* CategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F92F0F72B091ED900FC42D6 /* CategoryRequest.swift */; };
+		0F92F0FA2B09272700FC42D6 /* CardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F92F0F92B09272700FC42D6 /* CardRequest.swift */; };
+		0F92F0FC2B09272F00FC42D6 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F92F0FB2B09272F00FC42D6 /* CardModel.swift */; };
 		0F96372E2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F96372D2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf */; };
 		0F9637322A43BB8B009B256A /* OpenSans_Condensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F96372F2A43BB8A009B256A /* OpenSans_Condensed-SemiBold.ttf */; };
 		0F9637332A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F9637302A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf */; };
@@ -122,6 +126,10 @@
 		0F8F082D2AF3FBBA00C5578A /* ListExpensesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExpensesProtocol.swift; sourceTree = "<group>"; };
 		0F8F082E2AF3FBBA00C5578A /* ListExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExpensesViewModel.swift; sourceTree = "<group>"; };
 		0F8F082F2AF3FBBA00C5578A /* ListExpensesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExpensesService.swift; sourceTree = "<group>"; };
+		0F92F0F52B091E4100FC42D6 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		0F92F0F72B091ED900FC42D6 /* CategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequest.swift; sourceTree = "<group>"; };
+		0F92F0F92B09272700FC42D6 /* CardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRequest.swift; sourceTree = "<group>"; };
+		0F92F0FB2B09272F00FC42D6 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		0F96372D2A43BB7D009B256A /* OpenSans_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-Regular.ttf"; sourceTree = "<group>"; };
 		0F96372F2A43BB8A009B256A /* OpenSans_Condensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-SemiBold.ttf"; sourceTree = "<group>"; };
 		0F9637302A43BB8B009B256A /* OpenSans_SemiCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_SemiCondensed-Light.ttf"; sourceTree = "<group>"; };
@@ -185,6 +193,8 @@
 				0F31CFEF2AF1DE4700A16E33 /* CategoryProtocol.swift */,
 				0F31CFF02AF1DE4700A16E33 /* CategoryViewModel.swift */,
 				0F31CFF12AF1DE4700A16E33 /* CategoryService.swift */,
+				0F92F0F52B091E4100FC42D6 /* CategoryModel.swift */,
+				0F92F0F72B091ED900FC42D6 /* CategoryRequest.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -234,6 +244,8 @@
 				0F5400E92AFC561400A663DB /* CardProtocol.swift */,
 				0F5400EA2AFC561400A663DB /* CardViewModel.swift */,
 				0F5400EB2AFC561400A663DB /* CardService.swift */,
+				0F92F0F92B09272700FC42D6 /* CardRequest.swift */,
+				0F92F0FB2B09272F00FC42D6 /* CardModel.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -583,6 +595,7 @@
 				0F8CD2442A3F7391000B325E /* AppDelegate.swift in Sources */,
 				0F8CD2762A3F806E000B325E /* LoginViewModel.swift in Sources */,
 				0F18C37B2A97E782005B281A /* UserViewModel.swift in Sources */,
+				0F92F0FA2B09272700FC42D6 /* CardRequest.swift in Sources */,
 				0F8F08322AF3FBBA00C5578A /* ListExpensesProtocol.swift in Sources */,
 				0FAE6EE62AE9C81A0058D7EA /* DefaultRequestBuilder.swift in Sources */,
 				0FACA52C2AE9757600589041 /* EndPoint.swift in Sources */,
@@ -605,12 +618,15 @@
 				0FBCEE082AE894730045F279 /* HTTPMethod.swift in Sources */,
 				0FDC925D2A40B6A8000A4CF8 /* UIViewController + Extension.swift in Sources */,
 				0F8B27192AFC6F9B001F4837 /* CategoryTableViewCell.swift in Sources */,
+				0F92F0F62B091E4100FC42D6 /* CategoryModel.swift in Sources */,
 				0F5400ED2AFC561400A663DB /* CardViewController.swift in Sources */,
 				0FB755E52ABB50FA00E4DF3E /* InsertExpenseView.swift in Sources */,
 				0FBCEE062AE892CD0045F279 /* APIClient.swift in Sources */,
 				0FDC92642A40B8FC000A4CF8 /* RegisterViewController.swift in Sources */,
 				0FBCEE0C2AE898800045F279 /* HTTPClient.swift in Sources */,
+				0F92F0FC2B09272F00FC42D6 /* CardModel.swift in Sources */,
 				0F8CD24E2A3F7391000B325E /* SmartMoney.xcdatamodeld in Sources */,
+				0F92F0F82B091ED900FC42D6 /* CategoryRequest.swift in Sources */,
 				0FDC92532A40ACAE000A4CF8 /* UserModel.swift in Sources */,
 				0F4703DB2AEB47A200030825 /* HomeCustomTableViewCell.swift in Sources */,
 				0F5400F32AFC630100A663DB /* CardTableViewCell.swift in Sources */,

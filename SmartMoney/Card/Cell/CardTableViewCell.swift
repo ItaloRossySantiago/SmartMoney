@@ -43,8 +43,7 @@ class CardTableViewCell: UITableViewCell {
         ])
     }
     
-    public func setupCardCell() {
-        screen.cardNameLabel.text = "Banco Pan"
-
+    public func setupCardCell(data: CardModel) {
+        screen.cardNameLabel.text = data.cardName
     }
 }

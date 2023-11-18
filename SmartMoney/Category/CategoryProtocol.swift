@@ -6,6 +6,8 @@
 //
 
 import Foundation
-protocol CategoryHomeViewModelProtocol {
-
+protocol CategoryViewModelProtocol {
+    
+   func sucessGetListCategory(listCategory :CategoryList)
+   func errorGetListCategory()
 }
